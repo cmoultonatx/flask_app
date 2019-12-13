@@ -32,7 +32,7 @@ def leaflet():
     coords = (-97,30)
     map = return_map(coords)
 
-    return map._repr_html_()
+    return map.get_root().render()
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1', port=8000)
