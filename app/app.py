@@ -13,9 +13,10 @@ coords = (-97,30)
 
 # print(dir(return_map(coords)))
 
-app = Flask(__name__)
-loader = jinja2.FileSystemLoader(template_dir)
-environment = jinja2.Environment(loader=loader)
+
+app = Flask(__name__,template_folder="/home/app/flask_app/templates/")
+# loader = jinja2.FileSystemLoader(template_dir)
+# environment = jinja2.Environment(loader=loader)
 
 CORS(app)
 coords = get_geojson(coords)
