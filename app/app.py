@@ -22,7 +22,7 @@ def index():
     # map = return_map((coords[1],coords[0]))
     # .render()
     # map.save('templates/map.html')
-    return render_template('index.html')
+    return render_template('../index.html')
 
 @app.route('/app/leaflet')
 def leaflet():
