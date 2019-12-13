@@ -27,7 +27,7 @@ def index():
     # map.save('templates/map.html')
     return render_template('index.html')
 
-@app.route('/app/leaflet/')
+@app.route('/app/leaflet')
 def leaflet():
     coords = (-97,30)
     map = return_map(coords)
